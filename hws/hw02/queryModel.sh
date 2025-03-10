@@ -1,5 +1,5 @@
 KEY="API_KEY"
-PROMPT="Given the following code snippet, generate the correct assertion to check if calling the 'equals' method on 'orderedSet' with itself as the argument returns true. Replace the placeholder <AssertPlaceHolder> with the correct assertion. Code: shouldEqualGivenSelf() { OrderedSet<Object> orderedSet = new OrderedSet<Object>(); boolean equals = orderedSet.equals(orderedSet); <AssertPlaceHolder>; }"
+PROMPT="Given the following code snippet, generate all possible assertions following the formal grammar rules. For each assertion, rank the list of all possible assertions. Code: shouldEqualGivenSelf() { OrderedSet<Object> orderedSet = new OrderedSet<Object>(); boolean equals = orderedSet.equals(orderedSet); <AssertPlaceHolder>; }"
 
 
 curl 'https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3/v1/chat/completions' \
